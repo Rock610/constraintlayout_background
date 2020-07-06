@@ -1,7 +1,7 @@
 # BackgroundGroup
 A ConstraintHelper implementation that offer background of a set of views
 
-BackgroundGroup is aim to reduce layout level
+BackgroundGroup is aim to reduce the num of layout levels in view trees
 
 BackgroundGroup will auto caculate the range of views that you set to `constraint_referenced_ids`,And show background that you set to `android:background`
 
