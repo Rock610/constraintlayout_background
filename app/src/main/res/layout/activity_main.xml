@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rock.constraintlayoutbg.BackgroundGroup
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius"
+        android:padding="12dp"
+        app:constraint_referenced_ids="tv_format,tv_shopname,tv_shopid,tv_username" />
+
+
+    <TextView
+        android:id="@+id/tv_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="some messagesome messagesome message"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_format"
+        app:layout_constraintTop_toBottomOf="@id/tv_format"
+        tools:text="hello " />
+
+    <TextView
+        android:id="@+id/tv_shopid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_shopname"
+        app:layout_constraintLeft_toRightOf="@id/tv_shopname"
+        app:layout_constraintTop_toTopOf="@id/tv_shopname"
+        android:text="Rock"/>
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third_line"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_shopname"
+        app:layout_constraintTop_toBottomOf="@id/tv_shopname"
+        />
+    <!--    </android.support.constraint.ConstraintLayout>-->
+
+    <View
+        android:id="@+id/line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#999999"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_device_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        android:text="device 9966  |  version v3.6.4.10  |  2019-06-19 13:45:37" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
