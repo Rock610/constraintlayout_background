@@ -1,4 +1,4 @@
-# constraintlayout_background
+# BackgroundGroup
 A ConstraintHelper implementation that offer background of a set of views
 
 It can reduce the complexity of the layout hierarchy
