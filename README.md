@@ -14,4 +14,4 @@ BackgroundGroup will auto caculate the range of views that you set to `constrain
 ![image](https://github.com/Rock610/constraintlayout_background/blob/master/images/result.png)
 
 # LICENSE
-[GPL](http://www.gnu.org/licenses/gpl-3.0.html)
+[Apache](https://www.apache.org/licenses/LICENSE-2.0)
